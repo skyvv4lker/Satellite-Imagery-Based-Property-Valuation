@@ -128,8 +128,9 @@ By integrating both data types, the model captures not just *what the house is*,
 │
 ├── model_training/
 │   ├── multimodal_training_testing.ipynb
+|   ├── XGB_tabular.ipynb
 │
-├── final_predictions.csv
+├── 22118009_final.csv
 ├── README.md
 ├── LICENSE
 ```
