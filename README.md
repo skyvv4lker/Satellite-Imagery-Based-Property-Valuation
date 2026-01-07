@@ -1,4 +1,4 @@
-# 🛰️ Satellite Imagery-Based Property Valuation  
+# Satellite Imagery-Based Property Valuation  
 **Multimodal Regression using Tabular + Satellite Image Data**
 
 ---
