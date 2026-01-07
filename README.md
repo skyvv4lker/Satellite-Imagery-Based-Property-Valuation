@@ -135,4 +135,100 @@ By integrating both data types, the model captures not just *what the house is*,
 ├── LICENSE
 ```
 
+## Explainability
+
+To improve model transparency and trust, **Grad-CAM (Gradient-weighted Class Activation Mapping)** is applied to the CNN image encoder.
+
+Grad-CAM highlights the regions of satellite imagery that most strongly influence the predicted property price. This helps interpret whether the model focuses on meaningful spatial features such as:
+
+- Green cover and vegetation
+- Proximity to water bodies
+- Road density and urban layout
+- Neighborhood structure
+
+These visual explanations confirm that the multimodal model learns **environmental context**, not just numerical correlations.
+
+## Tech Stack
+
+- **Data Handling:** Pandas, NumPy
+- **Geospatial Processing:** GeoPandas
+- **Deep Learning:** PyTorch / TensorFlow
+- **Image Processing:** OpenCV, PIL
+- **Machine Learning:** Scikit-learn, XGBoost
+- **Visualization:** Matplotlib, Seaborn
+
+## How to Run
+
+Follow the steps below to reproduce the full pipeline.
+
+### 1️ Clone the Repository
+
+```bash
+git clone https://github.com/skyvv4lker/Satellite-Imagery-Based-Property-Valuation.git
+cd Satellite-Imagery-Based-Property-Valuation
+```
+
+### 2️ Install Dependencies
+
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn opencv-python pillow torch torchvision xgboost geopandas
+```
+
+### 3 Run EDA and Preprocessing
+
+```bash
+jupyter notebook EDA/EDA.ipynb
+jupyter notebook EDA/preprocessing.ipynb
+```
+
+### 4 Fetch Satellite Images
+
+```bash
+jupyter notebook data_fetcher/data_fetcher.ipynb
+```
+
+### 5 Train Models
+
+```bash
+jupyter notebook model_training/multimodal_training_testing.ipynb
+```
+
+### 6 Final Output
+
+```
+22118009_final.csv
+```
+Format:
+```
+id, predicted_price
+```
+
+---
+
+## ✅ Final Checklist (You’re almost done)
+
+After adding these sections, your README will have:
+
+✔ Overview  
+✔ Objectives  
+✔ Dataset  
+✔ Methodology  
+✔ Model Architecture  
+✔ Repository Structure  
+✔ **Explainability** ✅  
+✔ **Evaluation Metrics** ✅  
+✔ **Tech Stack** ✅  
+✔ **How to Run** ✅  
+
+This is **submission-grade** and matches industry-standard ML repos.
+
+---
+
+If you want, next I can:
+- Do a **final line-by-line README review**
+- Help write the **Project Report PDF**
+- Prepare a **defense explanation** (in case of viva/presentation)
+
+Just tell me 👌
+
 
